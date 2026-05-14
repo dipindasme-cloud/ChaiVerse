@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&amp;family=Montserrat:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"primary-container": "#4e342e", "on-background": "#1f1b14", "error-container": "#ffdad6", "on-secondary": "#ffffff", "on-tertiary-fixed": "#291800", "inverse-surface": "#353028", "surface-container-highest": "#ebe1d5", primary: "#361f1a", "tertiary-fixed": "#ffddb3", "primary-fixed-dim": "#e5beb5", "secondary-fixed": "#ffddba", "surface-container-low": "#fcf2e6", "on-primary-container": "#c19c94", "secondary-fixed-dim": "#ffb867", "outline-variant": "#d4c3bf", background: "#fff8f2", "on-error": "#ffffff", "surface-tint": "#755750", surface: "#fff8f2", error: "#ba1a1a", "surface-dim": "#e2d9cd", "surface-container-high": "#f0e7db", outline: "#827471", "secondary-container": "#ffb55d", "surface-container": "#f6ece1", "on-secondary-fixed-variant": "#673d00", "on-secondary-container": "#744600", "surface-container-lowest": "#ffffff", "on-error-container": "#93000a", "inverse-on-surface": "#f9efe3", "on-secondary-fixed": "#2b1700", "on-primary": "#ffffff", "on-primary-fixed": "#2b1611", "on-surface": "#1f1b14", secondary: "#875200", "on-primary-fixed-variant": "#5c403a", "primary-fixed": "#ffdad2", "surface-bright": "#fff8f2", "inverse-primary": "#e5beb5", "on-tertiary": "#ffffff", "tertiary-fixed-dim": "#e5c193", "on-tertiary-container": "#c09f73", tertiary: "#352102", "tertiary-container": "#4d3614", "on-surface-variant": "#504442", "on-tertiary-fixed-variant": "#5b421f", "surface-variant": "#ebe1d5"}, fontFamily: {headline: ["Lexend"], body: ["Montserrat"], label: ["Lexend"], display: "Lexend"}, borderRadius: {DEFAULT: "0.5rem", lg: "1rem", xl: "1.5rem", full: "9999px"}}}};</script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        background-color: #fff8f2;
+        color: #1f1b14;
+        font-family: 'Manrope', sans-serif;
+      }
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fff8f2]/70 backdrop-blur-xl flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest overflow-hidden">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="High-quality, professional, realistic headshot of a friendly young man with a warm smile, wearing a clean white shirt and a dark brown tie. Studio lighting, soft background, photorealistic, 4k. Profile picture style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKTPZX6kwuYWqYJHUk-wsy9-agyCJ-LlBWaP-P4S7IUg4qElZb9e7Hp8Do6CAtxmhhpjA7cj3djYLB8moe36n7YPahpUnLPt5XgCJBZydbC1ilKPfUaitcY9lMvNKIER1GIrbmuhWC5iexG7VSTVKwSGaOWP2Sx5NCm8n6nekWcQqtDDy6BHSpXJvWglxKrC8Nn0C9m1xlhf5ZXkG_esfIRuAkPrRwjSLOYB2s1vRzoThAlY2dUbKNS65BEkbrTnIl59XFYiuO"/>
+</div>
+<span class="text-2xl font-headline italic font-bold tracking-tight text-primary">ChaiVerse</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-primary hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined" data-icon="location_on" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</button>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-7xl mx-auto">
+<!-- Search & Filter Section -->
+<section class="mb-10">
+<h1 class="font-headline text-4xl font-bold text-primary mb-6 tracking-tight">Our Curated Menu</h1>
+<div class="flex flex-col md:flex-row gap-4 mb-8">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-secondary/20 font-body text-on-surface placeholder:text-outline/60" placeholder="Search for your favorite brew..." type="text"/>
+</div>
+<div class="flex gap-2">
+<button class="flex items-center gap-2 px-6 py-4 bg-surface-container-low rounded-lg font-body font-semibold text-primary hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">eco</span>
+                        Vegetarian
+                    </button>
+<button class="flex items-center gap-2 px-6 py-4 bg-surface-container-low rounded-lg font-body font-semibold text-primary hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-sm">spa</span>
+                        Vegan
+                    </button>
+</div>
+</div>
+<!-- Horizontal Categories -->
+<div class="flex gap-3 overflow-x-auto hide-scrollbar pb-2">
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-secondary text-white font-body font-bold text-sm tracking-wide">All</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-surface-container-low text-primary font-body font-bold text-sm tracking-wide hover:bg-surface-container-high transition-colors">Hot Tea</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-surface-container-low text-primary font-body font-bold text-sm tracking-wide hover:bg-surface-container-high transition-colors">Coffee</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-surface-container-low text-primary font-body font-bold text-sm tracking-wide hover:bg-surface-container-high transition-colors">Cold Beverages</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-surface-container-low text-primary font-body font-bold text-sm tracking-wide hover:bg-surface-container-high transition-colors">Snacks</button>
+<button class="whitespace-nowrap px-6 py-2 rounded-full bg-surface-container-low text-primary font-body font-bold text-sm tracking-wide hover:bg-surface-container-high transition-colors">Combos</button>
+</div>
+</section>
+<!-- Menu Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+<!-- Item 1: Adrak Chai -->
+<div class="group relative bg-surface-container-low rounded-lg p-6 pt-0 flex flex-col justify-between transition-all hover:translate-y-[-4px]">
+<div class="relative -mt-10 mb-4 h-48 w-full">
+<img alt="Adrak Chai" class="w-full h-full object-cover rounded-lg shadow-lg" data-alt="Professional DSLR food photography of a glass bottle of Adrak Chai (Indian ginger tea). Realistic tea texture, condensation on the bottle, warm natural lighting, café tabletop setting, soft shadows, shallow depth of field, high resolution, appetizing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGVTKMzCk32E4j5GuZjfdu6jLOCouhkWZJTM-Go0WO99fAj7v3hVvwsUW1DDTVB3QXf60wO6895dYvQ1AHr1LPH-zqcwcyOott4RNwEBOnM4O3-VMQgiq0D9d6LSHz3zdccL7sZQE7Jvv7yyeiMFdGbn4KbsCZ0_F8-a2BDx6VaN3PMKkA8LJj3qznbDT2KmX3gLEguOhesWIn0UFP1AcVoW10QwAlveUvdDCJsGlGgX3Q8jcGLjgCYjVt27diiKcoziYStP80"/>
+</div>
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline text-2xl font-bold text-primary">Adrak Chai</h3>
+<span class="px-2 py-0.5 rounded bg-green-100 text-green-800 text-[10px] font-bold uppercase tracking-wider">Veg</span>
+</div>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed mb-6">Traditional hand-pounded ginger infused tea with a blend of fresh spices.</p>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-headline text-xl font-bold text-secondary">$3.50</span>
+<button class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center hover:scale-105 active:scale-95 transition-transform">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Paneer Tikka Sandwich -->
+<div class="group relative bg-surface-container-low rounded-lg p-6 pt-0 flex flex-col justify-between transition-all hover:translate-y-[-4px]">
+<div class="relative -mt-10 mb-4 h-48 w-full">
+<img alt="Paneer Tikka Sandwich" class="w-full h-full object-cover rounded-lg shadow-lg" data-alt="Professional DSLR food photography of a Paneer Tikka Sandwich on artisanal bread. Visible grill marks, fresh green chutney, melted cheese, detailed texture, warm natural lighting, café tabletop setting, soft shadows, shallow depth of field, high resolution." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqxA5sU83cAwcMfbQse-V_ZqoDhULC-8zoqe666DYHeoeTL_I1_WLNEe15uX1J3r8LGBttVtXtaSuW9hv-o2lHiExtOJK61bpM8RUF7Wgz1znGLrljpMKDz7Bh1qOug-OI1Nsk5OkLcKohEK1rKqGzaJC9zyViVK4YL5fdBwM-f85pl2N1piGP2CvsgnB8ntnnHoSEN-qNIKgiEjQ5BPuijWYiH7l0LQ87Z7DhOv32j31-NAg8gnrqiM3115Q-_FFgQcGYPOkp"/>
+</div>
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline text-2xl font-bold text-primary">Tikka Sandwich</h3>
+<span class="px-2 py-0.5 rounded bg-green-100 text-green-800 text-[10px] font-bold uppercase tracking-wider">Veg</span>
+</div>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed mb-6">Smoky grilled paneer tikka with mint chutney and caramelized onions.</p>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-headline text-xl font-bold text-secondary">$8.95</span>
+<button class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center hover:scale-105 active:scale-95 transition-transform">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+<!-- Item 3: Cold Brew Coffee -->
+<div class="group relative bg-surface-container-low rounded-lg p-6 pt-0 flex flex-col justify-between transition-all hover:translate-y-[-4px]">
+<div class="relative -mt-10 mb-4 h-48 w-full">
+<img alt="Cold Brew" class="w-full h-full object-cover rounded-lg shadow-lg" data-alt="Professional DSLR food photography of a Classic Cold Brew coffee in a clear glass. Realistic ice cubes, condensation on the glass, dark coffee texture, reflections, warm natural lighting, café tabletop setting, soft shadows, shallow depth of field, high resolution." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhNr6RnWbkaDu_CjzVhfC_q2h1_ZMsz5lmkqfIt9iU11v1icS65iiEPVkphUu1bQATwvEzQv0y0n7MtVI_l0NToGifrwUPLM6Zwv2a_7sblNvDWH7S4ZpMUo029nr7W94axuCcpd7ScciKxcuOx1Y_Hdkwr73H2DvqHsY-4SnlkKTyKUstAGPvETcpNCXsY1BGGHguuCOKbQ0LRuyofXJkzI_b3CP__uw67lOylHRBEz0k2_9AG6a_OFSnhZhoLZnMfsioxh8v"/>
+</div>
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline text-2xl font-bold text-primary">Classic Cold Brew</h3>
+<span class="px-2 py-0.5 rounded bg-yellow-100 text-yellow-800 text-[10px] font-bold uppercase tracking-wider">Vegan</span>
+</div>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed mb-6">18-hour steeped artisanal coffee with notes of dark chocolate and stone fruit.</p>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-headline text-xl font-bold text-secondary">$5.25</span>
+<button class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center hover:scale-105 active:scale-95 transition-transform">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+<!-- Item 4: Bun Maska -->
+<div class="group relative bg-surface-container-low rounded-lg p-6 pt-0 flex flex-col justify-between transition-all hover:translate-y-[-4px]">
+<div class="relative -mt-10 mb-4 h-48 w-full">
+<img alt="Bun Maska" class="w-full h-full object-cover rounded-lg shadow-lg" data-alt="Professional DSLR food photography of a Bun Maska (buttered brioche bun). Soft, fluffy texture with a generous dollop of melting white butter, warm natural lighting, café tabletop setting, soft shadows, shallow depth of field, high resolution." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFPa1e4I79M5RYLgXy92Xw96r3upIlv7_vWt9bpaSI6tAX4fbQ64UDzeVlYO_3sKo_86M56Bqhu3X1gd2hJXJvDYw02UBj-S2ifjrsX_JLQS4Ozd_l6kW4YRV04dCWwIviMqx3x33oqJlWBvv38duduT-YrEmcft3O_kjm2UI2MS1wnhmQcEXpzmfauDQHnfdMDGh4IqTPlbg9G2XMcqQd5m48dq-NKBeNqJDENattFwxuwWJ-dtJ6RPlQ5opv87LI58sk-ncI"/>
+</div>
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline text-2xl font-bold text-primary">Bun Maska</h3>
+<span class="px-2 py-0.5 rounded bg-green-100 text-green-800 text-[10px] font-bold uppercase tracking-wider">Veg</span>
+</div>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed mb-6">Freshly baked brioche bun served with a generous dollop of homemade white butter.</p>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-headline text-xl font-bold text-secondary">$2.50</span>
+<button class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center hover:scale-105 active:scale-95 transition-transform">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+<!-- Item 5: Masala Fries -->
+<div class="group relative bg-surface-container-low rounded-lg p-6 pt-0 flex flex-col justify-between transition-all hover:translate-y-[-4px]">
+<div class="relative -mt-10 mb-4 h-48 w-full">
+<img alt="Masala Fries" class="w-full h-full object-cover rounded-lg shadow-lg" data-alt="Professional DSLR food photography of Masala Fries in a small metal bucket. Crispy texture, visible spice dusting, steam, warm natural lighting, café tabletop setting, soft shadows, shallow depth of field, high resolution." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBR3K5qBTIcz24NFh94lBRTOtclduH8MJ8mtGlLoDyx8SgGKOx-8QH2OIlSM0imJlMm-6Q1Ztwp7Kr1hre4Lfl3gQEC87g0WJvHp6yosH4B_a1rBIHzPzOciUVleKSA1ijb5GfXLVdxzFJsTAhOnykYPvQM62oHrlKGHYL44-Rj88KewQnmugJagTpgRCFE9yc-9v3V7fiIg7EenwE_3W3oH-SpZZ0gNTn5s52cB3C44kq4usWQvkEPsoYrxvh-UXc5kJRwAbB"/>
+</div>
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline text-2xl font-bold text-primary">Masala Fries</h3>
+<span class="px-2 py-0.5 rounded bg-yellow-100 text-yellow-800 text-[10px] font-bold uppercase tracking-wider">Vegan</span>
+</div>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed mb-6">Crispy hand-cut fries tossed in our signature gun-powder spice mix.</p>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-headline text-xl font-bold text-secondary">$4.75</span>
+<button class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center hover:scale-105 active:scale-95 transition-transform">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+<!-- Item 6: Rose Cardamom Latte -->
+<div class="group relative bg-surface-container-low rounded-lg p-6 pt-0 flex flex-col justify-between transition-all hover:translate-y-[-4px]">
+<div class="relative -mt-10 mb-4 h-48 w-full">
+<img alt="Rose Latte" class="w-full h-full object-cover rounded-lg shadow-lg" data-alt="Professional DSLR food photography of a Rose Latte in a white ceramic cup. Realistic pink latte art foam, delicate rose petals, steam, warm natural lighting, café tabletop setting, soft shadows, shallow depth of field, high resolution." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU37lj2JofC6PA2J2BnCJgJMoFhksD0k6AJPQ0wFeYbMZtIkeIwSbCYURES9WlRqA8fwExoGjY6x_cDHvHLiXiCE1yBG_SAUpPW4EVFUuH9xEJlQiEpVQtPWlZVkmKBb3KQlW8mf8eIAaSFPL6P3bl-Z5Ko_KBWERw_IUOBMGuEhDUpinFlCNcjNZ1zqV3q_FoQil9P5sCwzxqNPwwGp-pP3fKkRBJWkC-j0rxCgXmu9lJ215DEZm5bkhW22Cs-DTs5LOiVCrU"/>
+</div>
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline text-2xl font-bold text-primary">Rose Latte</h3>
+<span class="px-2 py-0.5 rounded bg-green-100 text-green-800 text-[10px] font-bold uppercase tracking-wider">Veg</span>
+</div>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed mb-6">Fragrant rose syrup paired with aromatic cardamom and velvety steamed milk.</p>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-headline text-xl font-bold text-secondary">$6.50</span>
+<button class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center hover:scale-105 active:scale-95 transition-transform">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-[#fff8f2]/80 backdrop-blur-2xl rounded-t-[3rem] z-50 shadow-[0px_-12px_32px_rgba(31,27,20,0.06)]">
+<div class="flex flex-col items-center justify-center text-[#4e342e] p-2 hover:text-[#875200] transition-colors cursor-pointer group">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform" data-icon="home">home</span>
+<span class="font-label font-semibold text-[10px] uppercase tracking-widest mt-1">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#875200] text-white rounded-full p-3 scale-110 -translate-y-2 shadow-lg transition-all cursor-pointer">
+<span class="material-symbols-outlined" data-icon="restaurant_menu">restaurant_menu</span>
+<span class="font-label font-semibold text-[10px] uppercase tracking-widest mt-0.5">Menu</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#4e342e] p-2 hover:text-[#875200] transition-colors cursor-pointer group">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform" data-icon="loyalty">loyalty</span>
+<span class="font-label font-semibold text-[10px] uppercase tracking-widest mt-1">Rewards</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#4e342e] p-2 hover:text-[#875200] transition-colors cursor-pointer group">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform" data-icon="person">person</span>
+<span class="font-label font-semibold text-[10px] uppercase tracking-widest mt-1">Profile</span>
+</div>
+</nav>
+</body></html>
